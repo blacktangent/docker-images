@@ -18,6 +18,8 @@ RUN apt-get install "postgresql-client-$PG_VERSION"
 
 #### NODE
 
+# Source: https://github.com/CircleCI-Public/circleci-dockerfiles/blob/master/ruby/images/2.5.1-stretch/node/Dockerfile
+
 ## Using node installation from https://raw.githubusercontent.com/nodejs/docker-node/72dd945d29dee5afa73956ebc971bf3a472442f7/8/jessie/Dockerfile
 
 RUN groupadd --gid 1000 node \
@@ -87,6 +89,8 @@ USER circleci
 
 
 #### BROWSERS
+
+# Source: https://github.com/CircleCI-Public/circleci-dockerfiles/blob/master/ruby/images/2.5.1-stretch/node-browsers/Dockerfile
 
 # install java 8
 #
