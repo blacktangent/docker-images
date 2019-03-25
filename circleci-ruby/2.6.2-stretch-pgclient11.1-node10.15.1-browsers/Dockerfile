@@ -8,7 +8,7 @@ USER root
 ENV PG_VERSION 11
 
 RUN mkdir ~/.gnupg
-RUN chmod 600 ~/.gnupg
+RUN chmod 700 ~/.gnupg
 RUN echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf
 
 RUN \
